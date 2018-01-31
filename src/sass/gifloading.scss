@@ -1,0 +1,117 @@
+$loadingWidth : 900px;
+$loadingHeight : 500px;
+$loadingheaderHeight : 40px;
+$loadingbodyHeight : 210px;
+$loadingborderWidth : 1px;
+@keyframes loadingif{
+    0%{
+        background-position: -$loadingWidth 0;
+    }
+    100%{
+        background-position: $loadingWidth 0;
+    }
+}
+.gifloading{
+    width: $loadingWidth;
+    box-sizing: border-box;
+    .animate-background{
+        background: linear-gradient(to right,#eee 5%,#ddd 15%,#eee 30%);
+        background-size: $loadingWidth $loadingHeight;
+        position: relative;
+        animation: loadingif 2s linear infinite;
+        .gifloading-header{
+            height: $loadingheaderHeight;
+            .loading-mask{
+                position: absolute;
+                background: #fff;
+                &:nth-child(1){
+                    height: 15px;
+                    width: $loadingWidth;
+                }
+                &:nth-child(2){
+                    width: 20px;
+                    height: $loadingheaderHeight;
+                    transform: skewX(-15deg);
+                    left: -10px;
+                }
+                &:nth-child(3){
+                    width: 20px;
+                    height: $loadingheaderHeight;
+                    transform: skewX(15deg);
+                    left: 150px;
+                }
+                &:nth-child(4){
+                    width: 20px;
+                    height: $loadingheaderHeight;
+                    left: 160px;
+                }
+                &:nth-child(5){
+                    width: $loadingWidth - 160px;
+                    height: 18px;
+                    left: 160px;
+                }
+                &:nth-child(6){
+                    width: $loadingWidth - 160px;
+                    height: 3px;
+                    top: 37px;
+                    left: 160px;
+                }
+                &:nth-child(7){
+                    width: 60px;
+                    height: $loadingheaderHeight;
+                    left: 300px;
+                }
+                &:nth-child(8){
+                    width: 480px;
+                    height: $loadingheaderHeight;
+                    left: 420px;
+                }
+            }
+        }
+        .gifloading-body{
+            box-sizing: border-box;
+            height: $loadingbodyHeight;
+            width: $loadingWidth;
+            border-radius: 5px;
+            border: $loadingborderWidth solid #eee;
+            
+            .loading-mask{
+                position: absolute;
+                background: #fff;
+                &:nth-child(1){
+                    height: 30px;     
+                    width: $loadingWidth - 2*$loadingborderWidth;   
+                }
+                &:nth-child(2){
+                    width: 30px;
+                    height: $loadingbodyHeight - 2*$loadingborderWidth;
+                }
+                &:nth-child(3){
+                    height: 20px;     
+                    width: $loadingWidth - 2*$loadingborderWidth;
+                    top: 90px;
+                }
+                &:nth-child(4){
+                    height: 30px;     
+                    width: $loadingWidth - 2*$loadingborderWidth;
+                    top: 130px;
+                }
+                &:nth-child(5){
+                    height: 20px;     
+                    width: $loadingWidth - 2*$loadingborderWidth;
+                    top: 180px;
+                }
+                &:nth-child(6){
+                    height: 29px;     
+                    width: $loadingWidth - 2*$loadingborderWidth;
+                    top: 220px;
+                }
+                &:nth-child(7){
+                    width: 30px;
+                    height: $loadingbodyHeight - 2*$loadingborderWidth;
+                    left: 80px;
+                }
+            }
+        }
+    }
+}

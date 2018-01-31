@@ -1,0 +1,88 @@
+@keyframes loadingif {
+  0% {
+    background-position: -900px 0; }
+  100% {
+    background-position: 900px 0; } }
+
+.gifloading {
+  width: 900px;
+  box-sizing: border-box; }
+  .gifloading .animate-background {
+    background: linear-gradient(to right, #eee 5%, #ddd 15%, #eee 30%);
+    background-size: 900px 500px;
+    position: relative;
+    animation: loadingif 2s linear infinite; }
+    .gifloading .animate-background .gifloading-header {
+      height: 40px; }
+      .gifloading .animate-background .gifloading-header .loading-mask {
+        position: absolute;
+        background: #fff; }
+        .gifloading .animate-background .gifloading-header .loading-mask:nth-child(1) {
+          height: 15px;
+          width: 900px; }
+        .gifloading .animate-background .gifloading-header .loading-mask:nth-child(2) {
+          width: 20px;
+          height: 40px;
+          transform: skewX(-15deg);
+          left: -10px; }
+        .gifloading .animate-background .gifloading-header .loading-mask:nth-child(3) {
+          width: 20px;
+          height: 40px;
+          transform: skewX(15deg);
+          left: 150px; }
+        .gifloading .animate-background .gifloading-header .loading-mask:nth-child(4) {
+          width: 20px;
+          height: 40px;
+          left: 160px; }
+        .gifloading .animate-background .gifloading-header .loading-mask:nth-child(5) {
+          width: 740px;
+          height: 18px;
+          left: 160px; }
+        .gifloading .animate-background .gifloading-header .loading-mask:nth-child(6) {
+          width: 740px;
+          height: 3px;
+          top: 37px;
+          left: 160px; }
+        .gifloading .animate-background .gifloading-header .loading-mask:nth-child(7) {
+          width: 60px;
+          height: 40px;
+          left: 300px; }
+        .gifloading .animate-background .gifloading-header .loading-mask:nth-child(8) {
+          width: 480px;
+          height: 40px;
+          left: 420px; }
+    .gifloading .animate-background .gifloading-body {
+      box-sizing: border-box;
+      height: 210px;
+      width: 900px;
+      border-radius: 5px;
+      border: 1px solid #eee; }
+      .gifloading .animate-background .gifloading-body .loading-mask {
+        position: absolute;
+        background: #fff; }
+        .gifloading .animate-background .gifloading-body .loading-mask:nth-child(1) {
+          height: 30px;
+          width: 898px; }
+        .gifloading .animate-background .gifloading-body .loading-mask:nth-child(2) {
+          width: 30px;
+          height: 208px; }
+        .gifloading .animate-background .gifloading-body .loading-mask:nth-child(3) {
+          height: 20px;
+          width: 898px;
+          top: 90px; }
+        .gifloading .animate-background .gifloading-body .loading-mask:nth-child(4) {
+          height: 30px;
+          width: 898px;
+          top: 130px; }
+        .gifloading .animate-background .gifloading-body .loading-mask:nth-child(5) {
+          height: 20px;
+          width: 898px;
+          top: 180px; }
+        .gifloading .animate-background .gifloading-body .loading-mask:nth-child(6) {
+          height: 29px;
+          width: 898px;
+          top: 220px; }
+        .gifloading .animate-background .gifloading-body .loading-mask:nth-child(7) {
+          width: 30px;
+          height: 208px;
+          left: 80px; }
